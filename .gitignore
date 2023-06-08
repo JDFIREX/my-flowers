@@ -22,3 +22,64 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+*/**/.idea/*
+
+HELP.md
+target/
+*/**/target/
+!.mvn/wrapper/maven-wrapper.jar
+*/**/!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+*/**/!**/src/main/**/target/
+!**/src/test/**/target/
+*/**/!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+*/**/.apt_generated
+.classpath
+*/**/.classpath
+.factorypath
+*/**/.factorypath
+.project
+*/**/.project
+.settings
+*/**/.settings
+.springBeans
+*/**/.springBeans
+.sts4-cache
+*/**/.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*/**/*.iws
+*.iml
+*/**/*.iml
+*.ipr
+*/**/*.ipr
+
+### NetBeans ###
+/nbproject/private/
+*/**/nbproject/private/
+/nbbuild/
+*/**/nbbuild/
+/dist/
+*/**/dist/
+/nbdist/
+*/**/nbdist/
+/.nb-gradle/
+*/**/.nb-gradle/
+build/
+*/**/build/
+!**/src/main/**/build/
+*/**/!**/src/main/**/build/
+!**/src/test/**/build/
+*/**/!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### h2 db
+*/**/*.mv.db
