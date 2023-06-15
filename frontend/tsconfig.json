@@ -32,9 +32,15 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./",
     "paths": {
-      "@components/*": ["./src/components"],
-      "@app/*": ["./src/app"]
+      "@/*": ["src/*"],
+      "@modules/*": ["src/modules/*"],
+      "@app/*": ["src/app/*"],
+      "@ui/*": ["src/ui/*"],
+      "@assets/*": ["src/assets/*"],
+      "@locales/*": ["src/locales/*"],
+      "@services/*": ["src/services/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "dist/types/**/*.ts"],

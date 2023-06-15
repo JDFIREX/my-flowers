@@ -2,6 +2,9 @@
 const nextConfig = {
   distDir: "dist",
   reactStrictMode: true,
+  experimental: {
+    serverActions: true
+  },
   transpilePackages: []
 };
 

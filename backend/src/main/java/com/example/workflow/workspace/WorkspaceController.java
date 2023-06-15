@@ -1,7 +1,7 @@
 package com.example.workflow.workspace;
 
-import com.example.workflow.workspace.dto.CreateWorkSpaceDto;
-import com.example.workflow.workspace.dto.WorkSpaceDto;
+import com.example.workflow.workspace.dto.CreateWorkspaceDto;
+import com.example.workflow.workspace.dto.WorkspaceDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -14,16 +14,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping(value = "/workspace")
-class WorkSpaceController {
-    private final WorkSpaceService workSpaceService;
+class WorkspaceController {
+    private final WorkspaceService workSpaceService;
 
     @GetMapping
-    public Page<WorkSpaceDto> findAll(WorkSpaceSpecification workSpaceSpecification, Pageable pageable) {
+    public Page<WorkspaceDto> findAll(WorkspaceSpecification workSpaceSpecification, Pageable pageable) {
         return workSpaceService.findAll(workSpaceSpecification, pageable);
     }
 
     @PostMapping
-    public WorkSpaceDto create(@RequestBody CreateWorkSpaceDto createWorkSpaceDto) {
+    public WorkspaceDto create(@RequestBody CreateWorkspaceDto createWorkSpaceDto) {
         return workSpaceService.create(createWorkSpaceDto);
     }
 }

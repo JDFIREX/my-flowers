@@ -18,8 +18,8 @@ import lombok.Setter;
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Getter
 @Setter
-@Table(name = "WORK_SPACE")
-public class WorkSpace {
+@Table(name = "WORKSPACE")
+public class Workspace {
 
     @Id
     @EqualsAndHashCode.Include

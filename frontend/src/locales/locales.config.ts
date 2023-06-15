@@ -9,7 +9,7 @@ export const translationResources = {
   }
 };
 
-use(initReactI18next).init({
+void use(initReactI18next).init({
   lng: "pl",
   debug: true,
   resources: translationResources
